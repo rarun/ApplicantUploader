@@ -8,5 +8,7 @@
         <field:datetime dateTimePattern="${applicant_dob_date_format}" field="dob" id="c_gov_dhs_uscis_efile_domain_Applicant_dob" required="true" z="NHRs7fiXUTVMvciRKQs2drIs0Pg="/>
         <field:input field="ssn" id="c_gov_dhs_uscis_efile_domain_Applicant_ssn" required="true" validationMessageCode="field_invalid_integer" z="RTJnJ287jhsShr9spGVjj01nLBM="/>
         <field:input field="email" id="c_gov_dhs_uscis_efile_domain_Applicant_email" required="true" validationMessageCode="field_invalid_email" z="DI4pQzRS0vumMb63hHhUmeJ5oiM="/>
+        <field:simple field="evidence" id="c_gov_dhs_uscis_efile_domain_Applicant_evidence" messageCode="entity_reference_not_managed" messageCodeAttribute="Evidence" z="Qu5YEIu6dlS2SxON5/8xGSAYc7c="/>
+        <field:input field="password" id="c_gov_dhs_uscis_efile_domain_Applicant_password" max="10" min="6" required="true" z="s3bYQFnw/ic0kpydnKrGM/ul3/Y="/>
     </form:update>
 </div>

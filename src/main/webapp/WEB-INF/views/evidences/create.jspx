@@ -2,11 +2,12 @@
 <div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
-    <form:create id="fc_gov_dhs_uscis_efile_domain_Evidence" modelAttribute="evidence" path="/evidences" multipart="true" render="${empty dependencies}" z="r0qHGcPYOp+eTsHL2ymzmkbSWHI=">
-        <field:textarea field="filepath" id="c_gov_dhs_uscis_efile_domain_Evidence_filepath" required="true" render="false" z="as2NaIcMgb0AWYbJSXFWzqsINu8="/>
-        <field:input field="filesize" id="c_gov_dhs_uscis_efile_domain_Evidence_filesize" required="true" render="false" z="czxYumMB/klxKNLOml3mbINrj2E="/>
-        <field:input field="contentType" id="c_gov_dhs_uscis_efile_domain_Evidence_contentType" required="true" render="false" z="imPleT6JViE9TOBq3w8VKa8XY9w="/>
+    <form:create id="fc_gov_dhs_uscis_efile_domain_Evidence" modelAttribute="evidence" multipart="true" path="/evidences" render="${empty dependencies}" z="user-managed">
+        <field:textarea field="filepath" id="c_gov_dhs_uscis_efile_domain_Evidence_filepath" render="false" required="true" z="user-managed"/>
+        <field:input field="filesize" id="c_gov_dhs_uscis_efile_domain_Evidence_filesize" render="false" required="true" z="user-managed"/>
+        <field:input field="contentType" id="c_gov_dhs_uscis_efile_domain_Evidence_contentType" render="false" required="true" z="user-managed"/>
         <field:input field="content" id="c_gov_dhs_uscis_efile_domain_Evidence_content" required="true" type="file" z="user-managed"/>
-    </form:create> 
+        <field:select field="applicant" id="c_gov_dhs_uscis_efile_domain_Evidence_applicant" itemValue="id" items="${applicants}" path="/applicants" required="true" z="7TXons6dVH81bMvdiXffr8nEEhc="/>
+    </form:create>
     <form:dependency dependencies="${dependencies}" id="d_gov_dhs_uscis_efile_domain_Evidence" render="${not empty dependencies}" z="oqMgzwDbPH9d+5GviiXG+czDT04="/>
 </div>

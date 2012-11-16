@@ -7,5 +7,6 @@
         <field:display field="filesize" id="s_gov_dhs_uscis_efile_domain_Evidence_filesize" object="${evidence}" z="oOoBgDLTPfYJBhnkG80iLIXQK2E="/>
         <field:display field="contentType" id="s_gov_dhs_uscis_efile_domain_Evidence_contentType" object="${evidence}" z="5MS2DwNVqXyJdISlFQxSn2avbgE="/>
         <field:display field="content" id="s_gov_dhs_uscis_efile_domain_Evidence_content" object="${evidence}" z="L+OD5AGSiyKosuDR435BJ6Dkdt0="/>
+        <field:display field="applicant" id="s_gov_dhs_uscis_efile_domain_Evidence_applicant" object="${evidence}" z="DGwhpC5X1f3fL1WQTDW5BDA/QfU="/>
     </page:show>
 </div>

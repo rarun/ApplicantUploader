@@ -19,3 +19,12 @@ perform tests
 security setup
 selenium test --controller ~.web.ApplicantController
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-11-16 01:55:59
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-11-16 02:31:00
+field set --fieldName evidence --type ~.domain.Evidence --class ~.domain.Applicant --cardinality ONE_TO_MANY
+field reference --fieldName applicant --type ~.domain.Applicant --class ~.domain.Evidence --notNull
+field string --class ~.domain.Applicant --fieldName password --notNull --sizeMin 6 --sizeMax 10
+finder add --finderName findApplicantesByEmailAndPasswordEquals --class ~.domain.Applicant
+finder list
+finder add --finderName findApplicantsByEmailAndPasswordEquals --class ~.domain.Applicant
+perform tests
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-11-16 03:27:00

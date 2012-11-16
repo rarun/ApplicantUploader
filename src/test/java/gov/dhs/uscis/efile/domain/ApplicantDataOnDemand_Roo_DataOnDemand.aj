@@ -31,6 +31,7 @@ privileged aspect ApplicantDataOnDemand_Roo_DataOnDemand {
         setEmail(obj, index);
         setFname(obj, index);
         setLname(obj, index);
+        setPassword(obj, index);
         setSsn(obj, index);
         return obj;
     }
@@ -53,6 +54,14 @@ privileged aspect ApplicantDataOnDemand_Roo_DataOnDemand {
     public void ApplicantDataOnDemand.setLname(Applicant obj, int index) {
         String lname = "lname_" + index;
         obj.setLname(lname);
+    }
+    
+    public void ApplicantDataOnDemand.setPassword(Applicant obj, int index) {
+        String password = "password_" + index;
+        if (password.length() > 10) {
+            password = password.substring(0, 10);
+        }
+        obj.setPassword(password);
     }
     
     public void ApplicantDataOnDemand.setSsn(Applicant obj, int index) {

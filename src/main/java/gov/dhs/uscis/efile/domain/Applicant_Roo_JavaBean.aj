@@ -4,7 +4,9 @@
 package gov.dhs.uscis.efile.domain;
 
 import gov.dhs.uscis.efile.domain.Applicant;
+import gov.dhs.uscis.efile.domain.Evidence;
 import java.util.Date;
+import java.util.Set;
 
 privileged aspect Applicant_Roo_JavaBean {
     
@@ -46,6 +48,22 @@ privileged aspect Applicant_Roo_JavaBean {
     
     public void Applicant.setEmail(String email) {
         this.email = email;
+    }
+    
+    public Set<Evidence> Applicant.getEvidence() {
+        return this.evidence;
+    }
+    
+    public void Applicant.setEvidence(Set<Evidence> evidence) {
+        this.evidence = evidence;
+    }
+    
+    public String Applicant.getPassword() {
+        return this.password;
+    }
+    
+    public void Applicant.setPassword(String password) {
+        this.password = password;
     }
     
 }

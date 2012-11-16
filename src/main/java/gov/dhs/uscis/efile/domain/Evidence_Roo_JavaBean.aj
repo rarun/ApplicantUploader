@@ -3,6 +3,7 @@
 
 package gov.dhs.uscis.efile.domain;
 
+import gov.dhs.uscis.efile.domain.Applicant;
 import gov.dhs.uscis.efile.domain.Evidence;
 
 privileged aspect Evidence_Roo_JavaBean {
@@ -37,6 +38,14 @@ privileged aspect Evidence_Roo_JavaBean {
     
     public void Evidence.setContent(byte[] content) {
         this.content = content;
+    }
+    
+    public Applicant Evidence.getApplicant() {
+        return this.applicant;
+    }
+    
+    public void Evidence.setApplicant(Applicant applicant) {
+        this.applicant = applicant;
     }
     
 }

@@ -8,5 +8,6 @@
         <field:display date="true" dateTimePattern="${applicant_dob_date_format}" field="dob" id="s_gov_dhs_uscis_efile_domain_Applicant_dob" object="${applicant}" z="Aim5WfAahcBwkenkVQ92Wd1rIyU="/>
         <field:display field="ssn" id="s_gov_dhs_uscis_efile_domain_Applicant_ssn" object="${applicant}" z="95qu+G9q0gX/jsJ431RoIa+JcN0="/>
         <field:display field="email" id="s_gov_dhs_uscis_efile_domain_Applicant_email" object="${applicant}" z="GqmJP0nRBGQHXTOsFtEmS0Wm2sM="/>
+        <field:display field="password" id="s_gov_dhs_uscis_efile_domain_Applicant_password" object="${applicant}" z="8kKUil1KmPMykoyeOzoh0W5KcHo="/>
     </page:show>
 </div>

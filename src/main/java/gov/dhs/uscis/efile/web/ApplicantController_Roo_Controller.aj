@@ -4,6 +4,7 @@
 package gov.dhs.uscis.efile.web;
 
 import gov.dhs.uscis.efile.domain.Applicant;
+import gov.dhs.uscis.efile.domain.Evidence;
 import gov.dhs.uscis.efile.web.ApplicantController;
 import java.io.UnsupportedEncodingException;
 import javax.servlet.http.HttpServletRequest;
@@ -95,6 +96,7 @@ privileged aspect ApplicantController_Roo_Controller {
     void ApplicantController.populateEditForm(Model uiModel, Applicant applicant) {
         uiModel.addAttribute("applicant", applicant);
         addDateTimeFormatPatterns(uiModel);
+        uiModel.addAttribute("evidences", Evidence.findAllEvidences());
     }
     
     String ApplicantController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

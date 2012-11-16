@@ -3,9 +3,12 @@
 
 package gov.dhs.uscis.efile.web;
 
+import gov.dhs.uscis.efile.domain.Applicant;
 import gov.dhs.uscis.efile.domain.Evidence;
 import gov.dhs.uscis.efile.web.EvidenceController;
 import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
+import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import org.springframework.ui.Model;
@@ -22,6 +25,11 @@ privileged aspect EvidenceController_Roo_Controller {
     @RequestMapping(params = "form", produces = "text/html")
     public String EvidenceController.createForm(Model uiModel) {
         populateEditForm(uiModel, new Evidence());
+        List<String[]> dependencies = new ArrayList<String[]>();
+        if (Applicant.countApplicants() == 0) {
+            dependencies.add(new String[] { "applicant", "applicants" });
+        }
+        uiModel.addAttribute("dependencies", dependencies);
         return "evidences/create";
     }
     
@@ -75,6 +83,7 @@ privileged aspect EvidenceController_Roo_Controller {
     
     void EvidenceController.populateEditForm(Model uiModel, Evidence evidence) {
         uiModel.addAttribute("evidence", evidence);
+        uiModel.addAttribute("applicants", Applicant.findAllApplicants());
     }
     
     String EvidenceController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

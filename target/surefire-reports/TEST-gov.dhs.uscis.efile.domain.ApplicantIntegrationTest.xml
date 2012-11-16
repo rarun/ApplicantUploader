@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="2.72" errors="0" skipped="0" tests="9" name="gov.dhs.uscis.efile.domain.ApplicantIntegrationTest">
+<testsuite failures="0" time="2.719" errors="0" skipped="0" tests="9" name="gov.dhs.uscis.efile.domain.ApplicantIntegrationTest">
   <properties>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="JOB_NAME" value="ApplicantUploader"/>
@@ -35,7 +35,7 @@
     <property name="NODE_NAME" value="master"/>
     <property name="PROCESSOR_ARCHITEW6432" value="AMD64"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_07\jre\lib\endorsed"/>
-    <property name="BUILD_ID" value="2012-11-16_02-18-20"/>
+    <property name="BUILD_ID" value="2012-11-16_03-17-02"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="file.encoding.pkg" value="sun.io"/>
@@ -65,7 +65,7 @@
     <property name="PUBLIC" value="C:\Users\Public"/>
     <property name="user.home" value="C:\"/>
     <property name="GIT_COMMITTER_NAME" value="Rama Arun"/>
-    <property name="BUILD_TAG" value="jenkins-ApplicantUploader-20"/>
+    <property name="BUILD_TAG" value="jenkins-ApplicantUploader-24"/>
     <property name="JENKINS_SERVER_COOKIE" value="0e7f9ac73f1d1a8b043bceda99e35bdb"/>
     <property name="HUDSON_URL" value="http://ramaarun:8080/"/>
     <property name="ProgramData" value="C:\ProgramData"/>
@@ -79,7 +79,7 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="maven.home" value="C:\java\apache-maven-3.0.4"/>
     <property name="java.class.path" value="C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-agent-1.2.jar;C:\java\apache-maven-3.0.4\boot\plexus-classworlds-2.4.jar"/>
-    <property name="sun.java.command" value="org.jvnet.hudson.maven3.agent.Maven3Main C:\java\apache-maven-3.0.4 C:\Program Files (x86)\Jenkins\war\WEB-INF\lib\remoting-2.17.jar C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-1.2.jar 59229"/>
+    <property name="sun.java.command" value="org.jvnet.hudson.maven3.agent.Maven3Main C:\java\apache-maven-3.0.4 C:\Program Files (x86)\Jenkins\war\WEB-INF\lib\remoting-2.17.jar C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-1.2.jar 60358"/>
     <property name="Path" value="C:\Program Files\Java\jdk1.7.0_07/bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Mozilla Firefox\;C:\java\Python27;C:\java\mongodb;C:\Program Files (x86)\Git\bin;C:\java\UnxUtils\bin;C:\java\UnxUtils\usr\local\wbin;"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="PROCESSOR_ARCHITECTURE" value="x86"/>
@@ -94,7 +94,7 @@
     <property name="HUDSON_HOME" value="C:\Program Files (x86)\Jenkins"/>
     <property name="PATH+MAVEN" value="C:\java\apache-maven-3.0.4/bin"/>
     <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
-    <property name="BUILD_URL" value="http://ramaarun:8080/job/ApplicantUploader/20/"/>
+    <property name="BUILD_URL" value="http://ramaarun:8080/job/ApplicantUploader/24/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="os.arch" value="amd64"/>
@@ -107,14 +107,14 @@
 "/>
     <property name="MAVEN_HOME" value="C:\java\apache-maven-3.0.4"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="BUILD_NUMBER" value="20"/>
+    <property name="BUILD_NUMBER" value="24"/>
     <property name="BASE" value="C:\Program Files (x86)\Jenkins"/>
     <property name="JENKINS_URL" value="http://ramaarun:8080/"/>
     <property name="PROCESSOR_REVISION" value="2a07"/>
     <property name="GIT_BRANCH" value="origin/HEAD"/>
     <property name="ProgramW6432" value="C:\Program Files"/>
     <property name="windir" value="C:\Windows"/>
-    <property name="GIT_COMMIT" value="2161fed17240bcc1d29b6d7c6802e9490cb264eb"/>
+    <property name="GIT_COMMIT" value="e6e1c269b360f2ad8cb03db3a484ebd7250fba58"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="SystemDrive" value="C:"/>
     <property name="maven3.interceptor" value="C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-1.2.jar"/>
@@ -123,13 +123,13 @@
     <property name="java.specification.version" value="1.7"/>
     <property name="PSModulePath" value="C:\Windows\system32\WindowsPowerShell\v1.0\Modules\"/>
   </properties>
-  <testcase time="2.359" classname="gov.dhs.uscis.efile.domain.ApplicantIntegrationTest" name="testMarkerMethod"/>
-  <testcase time="0.204" classname="gov.dhs.uscis.efile.domain.ApplicantIntegrationTest" name="testCountApplicants"/>
-  <testcase time="0.024" classname="gov.dhs.uscis.efile.domain.ApplicantIntegrationTest" name="testFindApplicant"/>
-  <testcase time="0.024" classname="gov.dhs.uscis.efile.domain.ApplicantIntegrationTest" name="testFindAllApplicants"/>
-  <testcase time="0.022" classname="gov.dhs.uscis.efile.domain.ApplicantIntegrationTest" name="testFindApplicantEntries"/>
-  <testcase time="0.021" classname="gov.dhs.uscis.efile.domain.ApplicantIntegrationTest" name="testMergeUpdate"/>
-  <testcase time="0.019" classname="gov.dhs.uscis.efile.domain.ApplicantIntegrationTest" name="testFlush"/>
-  <testcase time="0.028" classname="gov.dhs.uscis.efile.domain.ApplicantIntegrationTest" name="testRemove"/>
-  <testcase time="0.019" classname="gov.dhs.uscis.efile.domain.ApplicantIntegrationTest" name="testPersist"/>
+  <testcase time="2.267" classname="gov.dhs.uscis.efile.domain.ApplicantIntegrationTest" name="testMarkerMethod"/>
+  <testcase time="0.213" classname="gov.dhs.uscis.efile.domain.ApplicantIntegrationTest" name="testCountApplicants"/>
+  <testcase time="0.04" classname="gov.dhs.uscis.efile.domain.ApplicantIntegrationTest" name="testFindApplicant"/>
+  <testcase time="0.053" classname="gov.dhs.uscis.efile.domain.ApplicantIntegrationTest" name="testFindAllApplicants"/>
+  <testcase time="0.029" classname="gov.dhs.uscis.efile.domain.ApplicantIntegrationTest" name="testFindApplicantEntries"/>
+  <testcase time="0.029" classname="gov.dhs.uscis.efile.domain.ApplicantIntegrationTest" name="testMergeUpdate"/>
+  <testcase time="0.026" classname="gov.dhs.uscis.efile.domain.ApplicantIntegrationTest" name="testFlush"/>
+  <testcase time="0.034" classname="gov.dhs.uscis.efile.domain.ApplicantIntegrationTest" name="testRemove"/>
+  <testcase time="0.028" classname="gov.dhs.uscis.efile.domain.ApplicantIntegrationTest" name="testPersist"/>
 </testsuite>

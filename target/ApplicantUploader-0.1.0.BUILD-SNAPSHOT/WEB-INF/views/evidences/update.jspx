@@ -7,5 +7,6 @@
         <field:input field="filesize" id="c_gov_dhs_uscis_efile_domain_Evidence_filesize" required="true" z="czxYumMB/klxKNLOml3mbINrj2E="/>
         <field:input field="contentType" id="c_gov_dhs_uscis_efile_domain_Evidence_contentType" required="true" z="imPleT6JViE9TOBq3w8VKa8XY9w="/>
         <field:input field="content" id="c_gov_dhs_uscis_efile_domain_Evidence_content" z="giQCS0LWKzZgR7qMHW3hyHjWXiY="/>
+        <field:select field="applicant" id="c_gov_dhs_uscis_efile_domain_Evidence_applicant" itemValue="id" items="${applicants}" path="/applicants" required="true" z="7TXons6dVH81bMvdiXffr8nEEhc="/>
     </form:update>
 </div>

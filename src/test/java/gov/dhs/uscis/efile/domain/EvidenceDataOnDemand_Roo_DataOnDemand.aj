@@ -3,6 +3,8 @@
 
 package gov.dhs.uscis.efile.domain;
 
+import gov.dhs.uscis.efile.domain.Applicant;
+import gov.dhs.uscis.efile.domain.ApplicantDataOnDemand;
 import gov.dhs.uscis.efile.domain.Evidence;
 import gov.dhs.uscis.efile.domain.EvidenceDataOnDemand;
 import java.security.SecureRandom;
@@ -12,6 +14,7 @@ import java.util.List;
 import java.util.Random;
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 privileged aspect EvidenceDataOnDemand_Roo_DataOnDemand {
@@ -22,12 +25,21 @@ privileged aspect EvidenceDataOnDemand_Roo_DataOnDemand {
     
     private List<Evidence> EvidenceDataOnDemand.data;
     
+    @Autowired
+    private ApplicantDataOnDemand EvidenceDataOnDemand.applicantDataOnDemand;
+    
     public Evidence EvidenceDataOnDemand.getNewTransientEvidence(int index) {
         Evidence obj = new Evidence();
+        setApplicant(obj, index);
         setContentType(obj, index);
         setFilepath(obj, index);
         setFilesize(obj, index);
         return obj;
+    }
+    
+    public void EvidenceDataOnDemand.setApplicant(Evidence obj, int index) {
+        Applicant applicant = applicantDataOnDemand.getRandomApplicant();
+        obj.setApplicant(applicant);
     }
     
     public void EvidenceDataOnDemand.setContentType(Evidence obj, int index) {

@@ -8,6 +8,7 @@
             <table:column id="c_gov_dhs_uscis_efile_domain_Evidence_filesize" property="filesize" z="OhYXB+BxhdxwoZVEFOhF/0CDyQA="/>
             <table:column id="c_gov_dhs_uscis_efile_domain_Evidence_contentType" property="contentType" z="RBVm2Vfp9VlDoorKbeKb3pXr1sY="/>
             <table:column id="c_gov_dhs_uscis_efile_domain_Evidence_content" property="content" z="SCVJGCUr73vrD+HuQLFTbzJ5ZAY="/>
+            <table:column id="c_gov_dhs_uscis_efile_domain_Evidence_applicant" property="applicant" z="cbqvlDIyuLUk+H6Xf3ohgHJWUjg="/>
         </table:table>
     </page:list>
 </div>

@@ -5,15 +5,21 @@
 
 <tiles-definitions>
 
-  <definition name="default" template="/WEB-INF/layouts/default.jspx">
-    <put-attribute name="header" value="/WEB-INF/views/header.jspx" />
-    <put-attribute name="menu" value="/WEB-INF/views/menu.jspx" />
-    <put-attribute name="footer" value="/WEB-INF/views/footer.jspx" />
-  </definition>
-
   <definition name="public" template="/WEB-INF/layouts/default.jspx">
     <put-attribute name="header" value="/WEB-INF/views/header.jspx" />
     <put-attribute name="footer" value="/WEB-INF/views/footer.jspx" />
   </definition>
+  
+  <definition name="default_eve" template="/WEB-INF/layouts/default_eve.jspx">
+    <put-attribute name="header" value="/WEB-INF/views/header.jspx" />
+    <put-attribute name="menu_eve" value="/WEB-INF/views/menu_eve.jspx" />
+    <put-attribute name="footer" value="/WEB-INF/views/footer.jspx" />
+ </definition>	
+<definition name="default" template="/WEB-INF/layouts/default.jspx">
+    <put-attribute name="header" value="/WEB-INF/views/header.jspx" />
+    <put-attribute name="menu_main" value="/WEB-INF/views/menu_main.jspx" />
+    <put-attribute name="footer" value="/WEB-INF/views/footer.jspx" />
+ </definition>
+  
 
 </tiles-definitions>

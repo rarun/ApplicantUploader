@@ -1,5 +1,6 @@
 package gov.dhs.uscis.efile.domain;
 
+import javax.persistence.ManyToOne;
 import javax.persistence.Transient;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -22,8 +23,11 @@ public class Evidence {
 
     @NotNull
     private String contentType;
-    
-    @Transient
-	private byte[] content;
 
+    @Transient
+    private byte[] content;
+
+    @NotNull
+    @ManyToOne
+    private Applicant applicant;
 }

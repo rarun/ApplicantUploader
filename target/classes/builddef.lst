@@ -14,10 +14,12 @@ C:\CI_Development\ApplicantUploader\target\classes
 C:\CI_Development\ApplicantUploader\src\main\java\gov\dhs\uscis\efile\web\ApplicantController.java
 C:\CI_Development\ApplicantUploader\src\main\java\gov\dhs\uscis\efile\web\ApplicationConversionServiceFactoryBean.java
 C:\CI_Development\ApplicantUploader\src\main\java\gov\dhs\uscis\efile\domain\Evidence_Roo_ToString.aj
+C:\CI_Development\ApplicantUploader\src\main\java\gov\dhs\uscis\efile\domain\Applicant_Roo_Finder.aj
 C:\CI_Development\ApplicantUploader\src\main\java\gov\dhs\uscis\efile\web\ApplicationConversionServiceFactoryBean_Roo_ConversionService.aj
 C:\CI_Development\ApplicantUploader\src\main\java\gov\dhs\uscis\efile\domain\Evidence_Roo_Jpa_Entity.aj
 C:\CI_Development\ApplicantUploader\src\main\java\gov\dhs\uscis\efile\domain\Applicant_Roo_Configurable.aj
 C:\CI_Development\ApplicantUploader\src\main\java\gov\dhs\uscis\efile\web\ApplicantController_Roo_Controller.aj
+C:\CI_Development\ApplicantUploader\src\main\java\gov\dhs\uscis\efile\security\EvidenceAuthenticationProvider.java
 C:\CI_Development\ApplicantUploader\src\main\java\gov\dhs\uscis\efile\web\EvidenceController_Roo_Controller.aj
 C:\CI_Development\ApplicantUploader\src\main\java\gov\dhs\uscis\efile\domain\Applicant_Roo_ToString.aj
 C:\CI_Development\ApplicantUploader\src\main\java\gov\dhs\uscis\efile\domain\Evidence.java
